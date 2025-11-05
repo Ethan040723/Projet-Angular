@@ -1,0 +1,15 @@
+<div class="uk-container uk-height-viewport">
+  <div >
+    <h1 class="uk-h1">{{ArticlePage.title}}</h1>
+  </div>
+  <div class="uk-child-width-1-2@s uk-grid-match uk-height-viewport" uk-grid>
+    <img src="{{ArticlePage.imgPath}}" alt="image" class="">
+    <div class="uk-align-center">
+      <h2 class="uk-h2 uk-text-center">{{ArticlePage.desc}}</h2>
+      <h2 class="uk-h2 uk-text-center">{{ArticlePage.author}}</h2>
+
+    </div>
+  </div>
+  <button class ="uk-card-default uk-card-body uk-card-hover border-w left" (click) = "Redirection()"> Revenir à la listes des articles</button>
+
+</div>

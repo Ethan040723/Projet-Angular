@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import {Router, RouterOutlet} from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -9,4 +8,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('project');
+
+  constructor(private router: Router){}
+
+
+
+  RedirectionConnexion() {
+
+    this.router.navigate([`/connexion`]);
+  }
+  RedirectionInscription() {
+
+    window.open(`http://localhost:4200/inscription`, "_self");
+  }
 }

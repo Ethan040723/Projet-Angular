@@ -1,0 +1,11 @@
+<div  class="uk-container uk-height-viewport">
+  <div class="uk-position-center">
+    <div class="uk-card uk-card-default uk-card-hover uk-card-large uk-card-body uk-width-large">
+      <h3 class="uk-h3">Mot de passe oublié</h3>
+      <input class="uk-input" type="text" placeholder="email" [(ngModel)]="email">
+      <p class="uk-text uk-text-italic">Veulliez indiquer votre email afin qu'un nouveau mot de passe vous soit transmis</p>
+      <button class="uk-button uk-button-primary" (click)="MotdepasseOublie()">Envoyer</button>
+      <p>Voici votre nouveau mot de passe: {{data}}</p>
+    </div>
+  </div>
+</div>
